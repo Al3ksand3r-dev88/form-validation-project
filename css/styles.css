@@ -2,6 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
+
+}
+
+body{
+  background-image: url(/img/bg.jpg);
+  background-size: cover;
+
+  
 }
 .wrapper {
   width: 100%;
@@ -26,7 +35,7 @@ form {
 }
 
 form h3 {
-  color: #333;
+  color:beige;
   margin-bottom: 0.5rem;
 }
 
@@ -69,6 +78,7 @@ form label {
   display: block;
   font-size: 18px;
   margin: 1rem 0 0.2rem 0;
+  color: beige;
 }
 
 form label span {

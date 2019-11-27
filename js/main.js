@@ -51,6 +51,10 @@ function validateForm() {
     errorMessages.push(`<li>Phone number must only contain numbers</li>`);
   }
 
+  if (age.value === "Select your age") {
+    errorMessages.push(`<li>Please choose an age</li>`);
+  }
+
   if (errorMessages.length > 0) {
     formMsg.classList.add("animated", "shake");
     formMsg.style.display = "block";

@@ -36,6 +36,8 @@ function validateForm() {
     errorMessages.push(`<li>Please fill in empty field's</li>`);
   } else if (!checkValidEmail.test(email.value)) {
     errorMessages.push(`<li>Invalid E-mail address</li>`);
+  } else if (age.value === "Select your age") {
+    errorMessages.push(`<li>Please choose an age</li>`);
   }
 
   if (
@@ -49,10 +51,6 @@ function validateForm() {
 
   if (isNaN(phone.value)) {
     errorMessages.push(`<li>Phone number must only contain numbers</li>`);
-  }
-
-  if (age.value === "Select your age") {
-    errorMessages.push(`<li>Please choose an age</li>`);
   }
 
   if (errorMessages.length > 0) {
